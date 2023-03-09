@@ -1,0 +1,191 @@
+
+/*---------- CSS variables------------ */
+:root{
+    /* Basic color text  */
+    --color-text: #434455;
+    /* Color title  */
+    --color-title: #2E2F42;
+    /* Basic fon page */
+    --color-pages: #FFFFFF;
+    /* Color link */
+    --color-link:#2E2F42;
+    /* Color link focus & hover */
+    --color-link-focus:#404BBF;
+    /* Color batton  */
+    --color-btn-normal: #F4F4FD;
+    --color-btn-focus: #404BBF;
+    --text-btn-normal: #4D5AE5;
+    --text-btn-focus: #FFFFFF;
+}
+
+/*------- Color tex & body-----------  */
+body{
+    background-color: var(--color-pages);
+    color: var(--color-text);
+    font-family: Roboto, sans-serif;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+/*--- background section our team---  */
+.team{
+    background-color: #F4F4FD;
+}
+.team-item{
+    background-color: #FFFFFF;
+}
+
+/*---------- List none-------------- */
+.list{
+    list-style: none;
+}
+
+.link{
+    text-decoration: none;
+}
+
+/*----------- Style logo----------- */
+.nav-logo {
+    color: #4D5AE5;
+    font-family: Raleway, sans-serif;
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 1.17;
+    font-weight: 800;
+    letter-spacing: 0.03em;
+}
+.nav-logo-letters{
+    color:#2e2f42;
+}
+
+/*-------- Menu nav----------- */
+.nav-link{
+    color: var(--color-link);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+}
+.nav-link:hover,
+.nav-link:focus {
+    color: var(--color-link-focus)
+}
+/*--------- Address------------ */
+.adress{
+    font-style: normal;
+}
+.contact{
+    color: #434455;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+.contact:hover,
+.contact:focus{
+    color: #404BBF;
+}
+
+/*------------ Hero------------  */
+.hero{
+    background-color: #2E2F42;
+}
+
+.hero-title{
+    font-size: 56px;
+    line-height: 1.07;
+    color: #FFFFFF;
+    text-align: center;
+    letter-spacing: 0.02em;
+}
+
+.hero-buton{
+font-family: Roboto, sans-serif;
+background: #4D5AE5;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+width: 169px;
+height: 56px;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.04em;
+color: #FFFFFF;
+cursor: pointer;
+}
+.hero-buton:focus,
+.hero-buton:hover{
+    background-color: #404BBF;
+}
+
+/* --------------Button color------- */
+
+.button{
+    background-color: var(--color-btn-normal);
+    color: var(--text-btn-normal);
+    font-family: Roboto, sans-serif;
+    width: 116px;
+    height: 48px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    cursor: pointer; 
+}
+
+.button:focus, .button:hover{
+background-color: var(--color-btn-focus);
+color: var(--text-btn-focus);
+}
+/*------------ Title------------  */
+.advant-primary-title{
+    text-align: center;
+    letter-spacing: 0.02em;
+}
+
+.work-title{
+text-align: center;
+text-transform: capitalize;
+}
+.title-two {
+color: var(--color-title);
+font-size: 36px;
+line-height: 1.11;     
+}
+.title-three{
+color: var(--color-title);
+font-weight: 500;
+font-size: 20px;
+line-height: 1.2;
+letter-spacing: 0.02em;
+}
+.team-title{
+text-align: center;
+letter-spacing: 0.02em;
+text-transform: capitalize;
+}
+/*---------Portfolio text---------  */
+.portfolio-text{
+color: var(--color-text);
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+}
+/*------------ Footer------------  */
+.footer{
+background-color: #2E2F42;
+color: #E7E9FC;
+}
+.nav-logo-footer{
+color: #4d5ae5;
+font-family: Raleway, sans-serif;
+text-transform: uppercase;
+font-size: 18px;
+line-height: 1.17;
+font-weight: 800;
+align-items: center;
+letter-spacing: 0.03em;
+}
+
+.logo-footer{
+    color: #F4F4FD;
+    font-size: 16px;
+    line-height: 1.5;
+}
