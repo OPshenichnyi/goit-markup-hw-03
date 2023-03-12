@@ -17,6 +17,21 @@
     --text-btn-normal: #4D5AE5;
     --text-btn-focus: #FFFFFF;
 }
+h1,h2,h3,h4,p{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+ul,ol{
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    height: auto    ;
+}
 
 /*------- Color tex & body-----------  */
 body{
@@ -26,17 +41,27 @@ body{
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
-/*--- background section our team---  */
-.team{
-    background-color: #F4F4FD;
+/* Container set  */
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: solid 1px red;
 }
-.team-item{
-    background-color: #FFFFFF;
+
+/* Section Set */
+.section {
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 /*---------- List none-------------- */
 .list{
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .link{
@@ -45,6 +70,8 @@ body{
 
 /*----------- Style logo----------- */
 .nav-logo {
+    margin-right: 76px;
+    
     color: #4D5AE5;
     font-family: Raleway, sans-serif;
     text-transform: uppercase;
@@ -58,7 +85,18 @@ body{
 }
 
 /*-------- Menu nav----------- */
+.brd-hader{
+    border-bottom: solid 1px #E7E9FC;
+}
+.main-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 .nav-link{
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
     color: var(--color-link);
     font-weight: 500;
     font-size: 16px;
@@ -68,11 +106,28 @@ body{
 .nav-link:focus {
     color: var(--color-link-focus)
 }
+
+.nav-list{
+    display: flex;   
+}
+.nav-item:not(:last-child){
+    margin-right: 40px;
+}
+
 /*--------- Address------------ */
+
+.adress-list {
+    display: flex;
+}
 .adress{
     font-style: normal;
 }
+.adress-item:not(:last-child){
+    margin-right: 40px;
+}
 .contact{
+    padding-top: 24px;
+    padding-bottom: 24px;
     color: #434455;
     font-size: 16px;
     line-height: 1.5;
@@ -84,31 +139,42 @@ body{
 }
 
 /*------------ Hero------------  */
+
+.hero-style{
+    padding-bottom: 188px;
+    padding-top: 188px;
+}
+
 .hero{
     background-color: #2E2F42;
+    text-align: center;
 }
 
 .hero-title{
     font-size: 56px;
     line-height: 1.07;
     color: #FFFFFF;
-    text-align: center;
     letter-spacing: 0.02em;
+    margin-bottom: 48px;
+    max-width: 496px;        /*  provisional style */
+    margin-left: auto;       /*  provisional style */
+    margin-right: auto;      /*  provisional style */
+
 }
 
 .hero-buton{
-font-family: Roboto, sans-serif;
-background: #4D5AE5;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-border-radius: 4px;
-width: 169px;
-height: 56px;
-font-weight: 500;
-font-size: 16px;
-line-height: 1.5;
-letter-spacing: 0.04em;
-color: #FFFFFF;
-cursor: pointer;
+    background: #4D5AE5;
+    font-family: Roboto, sans-serif;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    width: 169px;
+    height: 56px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    cursor: pointer;
 }
 .hero-buton:focus,
 .hero-buton:hover{
@@ -130,62 +196,143 @@ cursor: pointer;
     cursor: pointer; 
 }
 
-.button:focus, .button:hover{
-background-color: var(--color-btn-focus);
-color: var(--text-btn-focus);
+.button:focus, 
+.button:hover{
+    background-color: var(--color-btn-focus);
+    color: var(--text-btn-focus);
 }
+
 /*------------ Title------------  */
+
 .advant-primary-title{
     text-align: center;
     letter-spacing: 0.02em;
 }
 
 .work-title{
-text-align: center;
-text-transform: capitalize;
+    text-align: center;
+    text-transform: capitalize; 
 }
-.title-two {
-color: var(--color-title);
-font-size: 36px;
-line-height: 1.11;     
+.title-two{ 
+    color: var(--color-title);
+    font-size: 36px;
+    line-height: 1.11;     
+    margin-bottom: 72px;
 }
-.title-three{
-color: var(--color-title);
-font-weight: 500;
-font-size: 20px;
-line-height: 1.2;
-letter-spacing: 0.02em;
+.title-three{   
+    color: var(--color-title);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
 }
 .team-title{
-text-align: center;
-letter-spacing: 0.02em;
-text-transform: capitalize;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
 }
+/* Advantages */
+.advant-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.advant-item{
+    flex-basis: calc( (100% - 72px) / 4 );
+}
+.advant-title{
+    margin-bottom: 8px;
+}
+
+/* What are we doing */
+.work-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+.work-item{
+    justify-content: space-between;
+    flex-wrap: calc(100% / 3 -24px);
+}
+/* Our Team */
+.team-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+.team {
+    background-color: #F4F4FD;
+}
+
+.team-item {
+    background-color: #FFFFFF;
+}
+
 /*---------Portfolio text---------  */
+.btn-filter{
+    display: flex;
+    justify-content: center;
+}
+.btn-item:not(:last-child){
+    margin-right: 24px;
+}
+.portfolio-list{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -24px;
+    margin-top: -48px;
+    
+    
+}
+.portfolio-list > .portfolio-item{
+flex-basis: calc(100% / 3 - 24px);
+margin-top: 48px;
+margin-left: 24px;
+    
+}
+
+
+
 .portfolio-text{
-color: var(--color-text);
-font-size: 16px;
-line-height: 1.5;
-letter-spacing: 0.02em;
+    color: var(--color-text);
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+.filter{
+    padding-top: 96px;
+    padding-bottom: 72px;
+    border: solid 1px red;
 }
 /*------------ Footer------------  */
 .footer{
-background-color: #2E2F42;
-color: #E7E9FC;
+    background-color: #2E2F42;
+    color: #E7E9FC;
 }
 .nav-logo-footer{
-color: #4d5ae5;
-font-family: Raleway, sans-serif;
-text-transform: uppercase;
-font-size: 18px;
-line-height: 1.17;
-font-weight: 800;
-align-items: center;
-letter-spacing: 0.03em;
+    color: #4d5ae5;
+    font-family: Raleway, sans-serif;
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 1.17;
+    font-weight: 800;
+    align-items: center;
+    letter-spacing: 0.03em;
+    display: inline-block;
+    margin-bottom: 16px;
 }
 
 .logo-footer{
     color: #F4F4FD;
     font-size: 16px;
     line-height: 1.5;
+}
+
+
+.text-footer{
+    max-width: 264px;
+}
+.footer-style{
+    padding-top: 100px;
+    padding-left: 156px;
+    padding-bottom: 100px;
 }
