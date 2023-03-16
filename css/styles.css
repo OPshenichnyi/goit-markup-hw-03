@@ -91,11 +91,13 @@ body{
 }
 
 /*-------- Menu nav----------- */
+.header{
+    border-bottom: solid 1px #E7E9FC;
+}
 .main-nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: solid 1px #E7E9FC;
 }
 .nav-link{
     display: block;
@@ -231,6 +233,9 @@ body{
 }
 
 /* What are we doing */
+.work{
+    padding-top: 0;
+}
 .work-list{
     display: flex;
     flex-wrap: wrap;
@@ -305,7 +310,7 @@ body{
 }
 
 .btn-item:not(:last-child){
-    margin-right: var(--set-gep-row);
+    margin-right: var(--set-gep-colum);
 }
 
 /* --------Portfolio list------ */
@@ -317,8 +322,8 @@ body{
 .portfolio-list{
     display: flex;
     flex-wrap: wrap;
-    margin-left: calc(- 1 * var(--set-gep-colum)); 
-    margin-top: calc(- 1 * var(--set-gep-row));  
+    margin-left: calc(-1 * var(--set-gep-colum)); 
+    margin-top: calc(-1 * var(--set-gep-row));  
 }
 
 .portfolio-item{
